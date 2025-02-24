@@ -55,3 +55,20 @@
 		text-align: left;
 	}
 } 
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav b {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 60px;
+	text-decoration: underline;
+	font-size: 17px;
+}
