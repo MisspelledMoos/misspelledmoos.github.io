@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="/stylemain.css">
+
+ <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+	<b>Ryan Moos</b>
+	<a href="/">Home</a>
+	<a href="/horror">Horror Art</a>
+	<a href="/experimental">Experimental Art</a>
+	<a href="/contact" class="split">Contact</a>
+	<a href="/about" class="split">About</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+	} else {
+		x.className = "topnav";
+	}
+}
+</script>
+
+</head>
+
+
+
+<body>
+
+<div class="headercontainer">
+	<div class="imgheader">
+		<video autoplay loop><source src="sewerfinal.mp4" type="video/mp4"></video>
+	</div>
+	<div class="projectheader">
+		<h1>Sewer Growth</h1>
+	</div>
+</div>
+
+<div class="projectbody">
+	<div class="projectheaderimg">
+		<video controls loop><source src="sewerfinal.mp4" type="video/mp4"></video>
+	</div>
+	<div><h2>Rendered Animation</h2></div>
+</div>
+<div class="projectbody">
+	<div class="projectheaderimg">
+		<img src="sewerstill.jpg" alt="A fleshy growth pulsing inside a sewer system."> 
+	</div>
+	<div><h2>Rendered Still</h2></div>
+</div>
+
+<div class="gallery">
+	<div>
+		<img src="sewerao.jpg">
+		<p>Pass - AO</p>
+	</div>
+	<div>
+		<img src="sewerdiffusecolor.jpg">
+		<p>Pass - Diffuse Color</p>
+	</div>
+	<div>
+			<img src="sewerdiffusedirect.jpg">
+			<p>Pass - Diffuse Direct</p>
+	</div>
+	<div>
+			<img src="sewershadow.jpg">
+			<p>Pass - Shadow</p>
+	</div>
+	<div>
+			<img src="sewervolumescatter.jpg">
+			<p>Pass - Volume Scatter</p>
+	</div>
+</div>
+
+</body>
+</html> 

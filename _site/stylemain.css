@@ -5,18 +5,29 @@
 
 * {
 	margin: 0px;
-	background-color: #000000;
+}
+
+body {
+	background-color: black;
 }
 
 h1 {
 	color: #ffffff;
 	font-family: ShutUpAndLoveMe;
 	font-size: 100px;
+	text-align: center;
+}
+
+h2 {
+	color: #ffffff;
+	font-family: ShutUpAndLoveMe;
+	font-size: 40px;
+	text-align: center;
 }
  
  /* Add a black background color to the top navigation */
 .topnav {
-	background: rgba(76, 175, 80, 0);
+	background: rgba(0, 0, 0, 0.7);
 	overflow: hidden;
 	position: sticky;
 	top: 0;
@@ -36,13 +47,13 @@ h1 {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-	background-color: #ddd;
+	background-color: #b100cd;
 	color: black;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-	background-color: #04AA6D;
+	background-color: #b100cd;
 	color: white;
 }
 
@@ -78,8 +89,13 @@ h1 {
 /* Create a right-aligned (split) link inside the navigation bar */
 .topnav a.split {
   float: right;
-  background-color: #04AA6D;
+  background-color: #000000;
   color: white;
+}
+
+.topnav a.split:hover {
+	background-color: #b100cd;
+	color: black;
 }
 
 .topnav b {
@@ -119,4 +135,59 @@ h1 {
 
 #abandon {
 	text-align: center;
+}
+
+.projectheaderimg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.projectheaderimg video {
+	display: block;
+	max-width: 60%;
+	max-height: 60%; 
+}
+
+.projectheaderimg img {
+	display: block;
+	max-width: 60%;
+	max-height: 60%; 
+}
+
+.projectbody {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.gallery {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+}
+
+.gallery img {
+	max-width: 95%;
+}
+
+.gallery p {
+	color: white;
+	text-align: center;
+}
+
+.headercontainer {
+	position: relative;
+	text-align: center;
+}
+
+.projectheader {
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	top: 8px;
 }
