@@ -162,6 +162,16 @@ h2 {
 	margin-bottom: 100px;
 }
 
+.projectbody img {
+	border: 5px solid gray;
+	margin-bottom: 10px;
+}
+
+.projectbody video {
+	border: 5px solid gray;
+	margin-bottom: 10px;
+}
+
 .gallery {
 	margin-top: 100px;
 	margin-bottom: 100px;
