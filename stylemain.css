@@ -1,7 +1,26 @@
+@font-face {
+  font-family: ShutUpAndLoveMe;
+  src: url("/fonts/Shut Up and Love Me.otf");
+}
+
+* {
+	margin: 0px;
+	background-color: #000000;
+}
+
+h1 {
+	color: #ffffff;
+	font-family: ShutUpAndLoveMe;
+	font-size: 100px;
+}
+ 
  /* Add a black background color to the top navigation */
 .topnav {
-	background-color: #333;
+	background: rgba(76, 175, 80, 0);
 	overflow: hidden;
+	position: sticky;
+	top: 0;
+	z-index: 999;
 }
 
 /* Style the links inside the navigation bar */
@@ -71,4 +90,33 @@
 	padding: 14px 60px;
 	text-decoration: underline;
 	font-size: 17px;
+}
+
+.imgheader {
+	-webkit-mask-image: linear-gradient(180deg,#000 50%,transparent);
+	margin: auto;
+	text-align: center;
+}
+
+.imgbuttoncontainer {
+	width: 100%;
+	display: grid;
+}
+
+.imgbutton {
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+}
+
+.buttonhover {
+	transition: all 0.3s ease-in-out;
+}
+
+.buttonhover:hover {
+	transform: scale(0.97);
+}
+
+#abandon {
+	text-align: center;
 }
