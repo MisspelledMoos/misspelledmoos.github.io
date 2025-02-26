@@ -231,3 +231,18 @@ h2 {
 	object-fit: cover;
 	object-position: center -100px;
 }
+
+.contactform {
+	background-color: black;
+	margin: auto;
+	display: block;
+	text-align: center;
+	max-width: 50vw;
+	font-weight: bold;
+	color: white;
+}
+
+#aboutheader {
+	-webkit-mask-image: linear-gradient(180deg,#000 50%,transparent);
+	width: 100vw;
+}
