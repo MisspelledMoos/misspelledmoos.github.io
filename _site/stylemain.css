@@ -147,14 +147,12 @@ h2 {
 
 .projectheaderimg video {
 	display: block;
-	max-width: 60%;
-	max-height: 60%; 
+	max-height: 75vh;
 }
 
 .projectheaderimg img {
 	display: block;
-	max-width: 60%;
-	max-height: 60%; 
+	max-height: 75vh;
 }
 
 .projectbody {
@@ -177,11 +175,15 @@ h2 {
 	margin-bottom: 100px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	
+	justify-content: center;
 }
 
 .gallery img {
-	max-width: 95%;
+	width: 50vw;
+}
+
+.gallery video {
+	width: 50vw;
 }
 
 .gallery p {
@@ -200,4 +202,11 @@ h2 {
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	top: 8px;
+}
+
+.moospreview {
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+	object-position: center -100px;
 }
