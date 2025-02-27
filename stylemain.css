@@ -24,6 +24,13 @@ h2 {
 	font-size: 40px;
 	text-align: center;
 }
+
+h3 {
+	color: #ffffff;
+	font-family: ShutUpAndLoveMe;
+	font-size: 50px;
+	text-align: left;
+}
  
  /* Add a black background color to the top navigation */
 .topnav {
@@ -243,6 +250,33 @@ h2 {
 }
 
 #aboutheader {
-	-webkit-mask-image: linear-gradient(180deg,#000 50%,transparent);
-	width: 100vw;
+	-webkit-mask-image: linear-gradient(90deg,#000 30%,transparent);
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	z-index: -999;
+	height: 100vh;
+}
+
+#aboutheader img {
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	margin-top: 30%;
+	margin-left: 3vw;
+	margin-right: 3vw;
+	margin-bottom: 15%;
+	text-align: left;
+}
+
+.column {
+	flex: 50%;
+	color: white;
+	text-align: left;
+}
+
+.transpback {
+	background: rgba(0, 0, 0, 0.3);
 }
