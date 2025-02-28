@@ -31,6 +31,13 @@ h3 {
 	font-size: 50px;
 	text-align: left;
 }
+
+h4 {
+	color: #ffffff;
+	font-family: ShutUpAndLoveMe;
+	font-size: 25px;
+	text-align: left;
+}
  
  /* Add a black background color to the top navigation */
 .topnav {
@@ -259,10 +266,12 @@ h3 {
 }
 
 #aboutheader img {
-	width: 100%;
+	min-width: 50%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
-.row {
+.rowabout {
 	display: flex;
 	margin-top: 30%;
 	margin-left: 3vw;
@@ -271,12 +280,62 @@ h3 {
 	text-align: left;
 }
 
-.column {
+.columnabout {
 	flex: 50%;
 	color: white;
 	text-align: left;
 }
 
+.rowgallery {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.columngallery {
+	flex: 20%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+
+.columngallery img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.columngallery video {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.columngallery button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 .transpback {
 	background: rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columngallery {
+    flex: 50%;
+    max-width: 45%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columngallery {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
