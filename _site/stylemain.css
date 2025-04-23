@@ -3,6 +3,11 @@
   src: url("/fonts/Shut Up and Love Me.otf");
 }
 
+@font-face {
+	font-family: Inter;
+	src: url("/fonts/Inter-VariableFont_slnt wght.ttf");
+}
+
 * {
 	margin: 0px;
 }
@@ -37,6 +42,22 @@ h4 {
 	font-family: ShutUpAndLoveMe;
 	font-size: 25px;
 	text-align: left;
+}
+
+h5 {
+	color: #ffffff;
+	font-family: Inter;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+h6 {
+	color: #ffffff;
+	font-family: Inter;
+	font-size: 15px;
+	text-align: center;
+	font-weight: 300;
 }
  
  /* Add a black background color to the top navigation */
@@ -158,11 +179,11 @@ h4 {
 	object-fit: cover;
 }
 
-.buttonhover {
+#casestudybar {
 	transition: all 0.3s ease-in-out;
 }
 
-.buttonhover:hover {
+#casestudybar:hover {
 	transform: scale(0.94);
 }
 
@@ -287,30 +308,41 @@ h4 {
 }
 
 .rowgallery {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 4px;
+	display: grid;
+	grid-template-columns: 30vw 30vw 30vw; /*Make the grid smaller than the container*/
+	gap: 10px;
+	padding: 10px;
+	justify-content: space-evenly;
 }
 
-.columngallery {
-	flex: 20%;
-	max-width: 25%;
-	padding: 0 4px;
+.rowgallery a {
+	text-decoration: none;
 }
 
-.columngallery img {
-	margin-top: 8px;
-	vertical-align: middle;
-	width: 100%;
+.rowgallerybox {
+	display: block;
+	margin: auto;
+	transition: all 0.3s ease-in-out;
 }
 
-.columngallery video {
-	margin-top: 8px;
-	vertical-align: middle;
-	width: 100%;
+.rowgallerybox:hover {
+	border: 2px solid #b100cd;
+	transform: scale(0.94);
 }
 
-.columngallery button {
+.rowgallery img {
+	max-height: 27vw;
+	max-width: 27vw;
+	margin: auto;
+}
+
+.rowgallery video {
+	max-height: 27vw;
+	max-width: 27vw;
+	margin: auto;
+}
+
+.rowgallery button {
 	background: none;
 	color: inherit;
 	border: none;
