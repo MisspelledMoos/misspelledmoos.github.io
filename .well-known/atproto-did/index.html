@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="/stylemain.css?v=3-7-25">
+
+ <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta http-equiv="Cache-Control" content="max-age=600"/>
+
+</head>
+
+
+
+<body>
+
+<!-- Nav Bar -->
+<div class="topnav" id="myTopnav">
+	<b>Ryan Moos</b>
+	<a href="/">Home</a>
+	<a href="/horror">Horror Art</a>
+	<a href="/experimental">Experimental Art</a>
+	<a href="/contact" class="split">Contact</a>
+	<a href="/about" class="split">About</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+	} else {
+		x.className = "topnav";
+	}
+}
+</script>
+<!-- Nav Bar END -->
+
+<embed src="bsky.txt">
+
+</body>
