@@ -315,6 +315,49 @@ h6 {
 	text-align: left;
 }
 
+.rowbuttoncontainer {
+	width: 70vw;
+	display: block;
+	margin: auto;
+	border: 2px solid #b100cd;
+	background-color: #17001a;
+	transition: all 0.3s ease-in-out;
+	text-decoration: none;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.rowbuttoncontainer:hover {
+	transform: scale(0.94);
+}
+
+.rowbuttoncontainer div {
+	color: #ffffff;
+	font-family: ShutUpAndLoveMe;
+	font-size: 3vw;
+	text-align: center;
+	margin: auto;
+}
+
+.rowbuttongrid {
+	display: grid;
+	grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw; /*Make the grid smaller than the container*/
+	gap: 1px;
+	padding: 1px;
+	justify-content: space-evenly;
+}
+
+.rowbuttoncontainer img {
+	max-height: 10vw;
+	max-width: 10vw;
+	margin: auto;
+	display: block;
+}
+
+.rowbutton a {
+	text-decoration: none;
+}
+
 .rowgallery {
 	display: grid;
 	grid-template-columns: 30vw 30vw 30vw; /*Make the grid smaller than the container*/
