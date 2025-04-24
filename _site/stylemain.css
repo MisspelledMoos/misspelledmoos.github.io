@@ -334,6 +334,7 @@ h6 {
 	max-height: 27vw;
 	max-width: 27vw;
 	margin: auto;
+	display: block;
 }
 
 .rowgallery video {
