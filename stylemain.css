@@ -59,6 +59,14 @@ h6 {
 	text-align: center;
 	font-weight: 300;
 }
+
+.rowgallerybox p  {
+	color: #ffffff;
+	font-family: Inter;
+	font-size: 10px;
+	text-align: center;
+	font-weight: 200;
+}
  
  /* Add a black background color to the top navigation */
 .topnav {

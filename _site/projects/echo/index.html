@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="/stylemain.css?v=4-23-25">
+
+ <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta http-equiv="Cache-Control" content="max-age=600"/>
+
+</head>
+
+
+
+<body>
+
+<!-- Nav Bar -->
+<div class="topnav" id="myTopnav">
+	<b>Ryan Moos</b>
+	<a href="/">Home</a>
+	<a href="/gallery">Gallery</a>
+	<a href="/character">Characters/Creatures</a>
+	<a href="/animation">Animation</a>
+	<a href="/experimental">Experimental</a>
+	<a href="/contact" class="split">Contact</a>
+	<a href="/about" class="split">About</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+	} else {
+		x.className = "topnav";
+	}
+}
+</script>
+<!-- Nav Bar END -->
+
+<div class="headercontainer">
+	<div class="imgheader">
+		<video autoplay loop muted><source src="Turntable.mp4" type="video/mp4"></video>
+	</div>
+	<div class="projectheader">
+		<h1>Echo</h1><h2>(Character design by Cicada)</h2>
+	</div>
+</div>
+
+<div class="projectbody">
+	<div class="projectheaderimg">
+		<video controls><source src="Echo.mp4" type="video/mp4"></video>
+	</div>
+	<div><h2>Turnaround</h2></div>
+</div>
+
+<div class="gallery">
+	<div>
+		<img src="EchoColor.jpg">
+		<p>Textures</p>
+	</div>
+	<div>
+		<img src="ref.png">
+		<p>Original reference (By Cicada)</p>
+	</div>
+</div>
+
+</body>
+</html> 
