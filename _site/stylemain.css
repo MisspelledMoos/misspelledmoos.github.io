@@ -423,3 +423,46 @@ h6 {
     max-width: 100%;
   }
 }
+
+.contactlinks {
+	width: 80vw;
+	padding: 100px;
+	margin: auto;
+}
+
+.contactlinksgrid {
+	display: grid;
+	grid-template-columns: 10vw 10vw 10vw 10vw 10vw; /*Make the grid smaller than the container*/
+	gap: 10px;
+	padding: 10px;
+	justify-content: space-evenly;
+}
+
+.contactlinks img {
+	width: 6vw;
+	display: block;
+	margin: auto;
+}
+
+.contactlinks a {
+	background-color: purple;
+	display: block;
+	margin: auto;
+	transition: all 0.3s ease-in-out;
+	border: 2px solid #b100cd;
+	background-color: #17001a;
+	text-decoration: none;
+}
+
+.contactlinks a:hover {
+	transform: scale(0.94);
+}
+
+.contactlinks p {
+	color: #ffffff;
+	font-family: ShutUpAndLoveMe;
+	font-size: 4vw;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
