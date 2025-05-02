@@ -70,7 +70,7 @@ h6 {
  
  /* Add a black background color to the top navigation */
 .topnav {
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(23, 0, 26, 0.95);
 	overflow: hidden;
 	position: sticky;
 	top: 0;
