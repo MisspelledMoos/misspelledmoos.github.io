@@ -9,6 +9,14 @@
 	max-height: 70vh;
 }
 
+.container a {
+	color: orange;
+}
+
+.container a:visited {
+	color: orange;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
